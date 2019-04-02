@@ -1,0 +1,264 @@
+Microsoft Windows [Version 10.0.17134.648]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\Dezen>python
+Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)] :: Anaconda, Inc. on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> exit
+Use exit() or Ctrl-Z plus Return to exit
+>>> pins = {"dezen":21,"Rizky":1,"Wes":2}
+>>> pins = {"dezen":2121,"Rizky":1234,"Wes":4321}
+>>> pins[0]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 0
+>>> pins["dezen"]
+2121
+>>> type(pins["Rizky"]
+...
+... ()
+... -
+... )
+  File "<stdin>", line 5
+    )
+    ^
+SyntaxError: invalid syntax
+>>> type(pins["Rizky"])
+<class 'int'>
+>>> pins.key
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'dict' object has no attribute 'key'
+>>> pins.key()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'dict' object has no attribute 'key'
+>>> pins.keys()
+dict_keys(['dezen', 'Rizky', 'Wes'])
+>>> pins.value();
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'dict' object has no attribute 'value'
+>>> pins.value()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'dict' object has no attribute 'value'
+>>> pins.value()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'dict' object has no attribute 'value'
+>>> pins.keys()
+dict_keys(['dezen', 'Rizky', 'Wes'])
+>>> pins.value()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'dict' object has no attribute 'value'
+>>> pins["Nia"] = 3333
+>>> print (pins)
+{'dezen': 2121, 'Rizky': 1234, 'Wes': 4321, 'Nia': 3333}
+>>> pins.pop("Wes")
+4321
+>>> pins
+{'dezen': 2121, 'Rizky': 1234, 'Nia': 3333}
+>>> pins.pop("Rizky")
+1234
+>>> pins.pop("Nia")
+3333
+>>> pins["alsa"] = 1114
+>>> pins
+{'dezen': 2121, 'alsa': 1114}
+>>> pins["elok"] = "AB123"
+>>> pins
+{'dezen': 2121, 'alsa': 1114, 'elok': 'AB123'}
+>>> masukan = input("Masukan Nama anda:")
+Masukan Nama anda:dezen
+>>> print masukan
+  File "<stdin>", line 1
+    print masukan
+                ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(masukan)?
+>>> bilangan = input("masukan angka: ")
+masukan angka: 70
+>>> print(bilangan)
+70
+>>> print(masukan)
+dezen
+>>> print(bilanga**2)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'bilanga' is not defined
+>>> print(bilangan**2)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'int'
+>>> bilangan = int(input("masukan angka :))
+  File "<stdin>", line 1
+    bilangan = int(input("masukan angka :))
+                                          ^
+SyntaxError: EOL while scanning string literal
+>>> 99
+99
+>>> bilangan = int(input("masukan angka :))
+  File "<stdin>", line 1
+    bilangan = int(input("masukan angka :))
+                                          ^
+SyntaxError: EOL while scanning string literal
+>>> bilangan = int(input("masukan angka :"))
+masukan angka :90
+>>> print(bilangan**2)
+8100
+>>> bilangan = float(input("masukan angka :))
+  File "<stdin>", line 1
+    bilangan = float(input("masukan angka :))
+                                            ^
+SyntaxError: EOL while scanning string literal
+>>> bilangan = float(input("masukan angka :"))
+masukan angka :50
+>>> bilangan = float(input("masukan angka :))
+  File "<stdin>", line 1
+    bilangan = float(input("masukan angka :))
+                                            ^
+SyntaxError: EOL while scanning string literal
+>>> bilangan = float(input("masukan angka :"))
+masukan angka :6,5
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: could not convert string to float: '6,5'
+>>> 6.5
+6.5
+>>> bilangan = float(input("masukan angka :"))
+masukan angka :6.5
+>>> print(bilangan/2)
+3.25
+>>> pins
+{'dezen': 2121, 'alsa': 1114, 'elok': 'AB123'}
+>>> pins.values()
+dict_values([2121, 1114, 'AB123'])
+>>> kode =1234
+>>> pins.values()
+dict_values([2121, 1114, 'AB123'])
+>>> kode in pins.values()
+False
+>>> kode in pins.values()
+False
+>>> if 1<5
+  File "<stdin>", line 1
+    if 1<5
+         ^
+SyntaxError: invalid syntax
+>>> if 1<5:
+...
+... print("Yes")
+  File "<stdin>", line 3
+    print("Yes")
+        ^
+IndentationError: expected an indented block
+>>> if 1<5:
+...     print("Yes")
+... else:
+...     print("No")
+...
+Yes
+>>> if 1==5
+  File "<stdin>", line 1
+    if 1==5
+          ^
+SyntaxError: invalid syntax
+>>> if 1==5:
+...     print("Benar")
+... else:
+...     print("Salah")
+...
+Salah
+>>> user_input = float(input("Masukan  Angka: "))
+Masukan  Angka: 88
+>>> if user_input > 100:
+...     print("Greater")
+... else:
+...     print("Samller")
+...
+Samller
+>>> if user_input > 100:
+...     print(Lebih Besar")
+  File "<stdin>", line 2
+    print(Lebih Besar")
+                    ^
+SyntaxError: invalid syntax
+>>> if user_input > 100:
+...     print("Lebih Besar"
+... )
+... elif user_input == 100:
+...     print("sama dengan")
+... else:
+...     print("lebih kecil")
+... lebih kecil
+  File "<stdin>", line 8
+    lebih kecil
+        ^
+SyntaxError: invalid syntax
+>>> lebih kecil
+  File "<stdin>", line 1
+    lebih kecil
+              ^
+SyntaxError: invalid syntax
+>>> lebih kecil
+  File "<stdin>", line 1
+    lebih kecil
+              ^
+SyntaxError: invalid syntax
+>>>
+>>>
+>>> if user_input > 100:
+...     print(Lebih Besar")
+  File "<stdin>", line 2
+    print(Lebih Besar")
+                    ^
+SyntaxError: invalid syntax
+>>> if user_input > 100:
+...     print(Lebih Besar"
+  File "<stdin>", line 2
+    print(Lebih Besar"
+                    ^
+SyntaxError: invalid syntax
+>>> if user_input > 100:
+... else:
+  File "<stdin>", line 2
+    else:
+       ^
+IndentationError: expected an indented block
+>>> def printing():
+...     print("Halo")
+...     print("Dunia")
+...
+>>> printing
+<function printing at 0x000002857DA4C1E0>
+>>> printing
+<function printing at 0x000002857DA4C1E0>
+>>> printing()
+Halo
+Dunia
+>>> def luas_persegi(sisi):
+...     luas=sisi*sisi
+...     return luas
+...
+>>> luas_persegi(6)
+36
+>>> def luas segitifa(alas,tinggi):
+  File "<stdin>", line 1
+    def luas segitifa(alas,tinggi):
+                    ^
+SyntaxError: invalid syntax
+>>> def luas segitiga(alas,tinggi):
+  File "<stdin>", line 1
+    def luas segitiga(alas,tinggi):
+                    ^
+SyntaxError: invalid syntax
+>>> def luas_segitiga(alas,tinggi):
+...     luas = (alas*tinggi)/2
+...     print("Luas Segitiga : %d" %luas)
+...
+>>> luas_segitiga(100,50)
+Luas Segitiga : 2500
+>>>
+
+
